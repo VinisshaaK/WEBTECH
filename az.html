@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+<title>Login</title>
+<script>
+        function valid(){
+            var user=document.getElementById("un").value;
+            var reg=/^[A-Z a-z]+$/
+            var res=reg.test(user)
+            if(res){
+                alert("username accepted please enter password")
+                return true
+            }
+            else{
+                alert("Username should be of type characters only")
+                return false
+            }
+            var pass=document.getElementById("pw")
+            if(user.value.trim()=="" || pass.value.trim()==""){
+                alert("Username and password should not be empty")
+                return false;
+            }
+            else{
+                alert("accepted")
+                return true;
+            }
+        }
+       
+<style>
+h1,label,p{
+ color:#0B3F5E ;
+font-family:Viner Hand ITC;
+}
+body{
+background-image:url(log.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+}
+form{
+border:solid 3px black;
+border-radius:40px 40px 40px 40px;
+background-color:white ;
+opacity:0.6;
+padding-right:10px;
+padding-left:10px;
+padding-top:30px;
+padding-bottom:30px;
+margin-right:400px;
+margin-left:400px;
+margin-top:120px;
+}
+#button{
+background-color:orange;
+border-width:15px;
+box-shadow:rgb(155,8,44);
+color:white;
+margin-left:200px;		
+}
+#button:hover{
+background-color:red;
+border-radius:20px 30px 20px 30px;
+color:white;
+align:center;
+}
+</style>
+</head>
+
+<body>
+    <form action="paintings.html" onsubmit="return valid()">
+<h1 align="center">LOGIN</h1>
+<b><p>USERNAME : <input type="text" placeholder="enter your name" id="un" required></p>
+<b><p>PASSWORD : <input type="password" placeholder="enter correct password" id="pw" required></p></br>
+<a href="paintings.html"><button type="button" id="button">SUBMIT</button></a>
+<a href="homepage.html"><p align="center">Back to Home</p></a>
+</form>
+</body>

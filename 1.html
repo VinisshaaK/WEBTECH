@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+<title>Login</title>
+<link href="colorlogo.jpg" rel="icon">
+<script>
+    function valid(){
+    var pass=document.getElementById("pwd").value
+    var user=document.getElementById("user").value
+    var reg=/^[A-Z a-z 1-10]+$/
+    //var res=reg.test(pass)
+    if(0){
+        alert("invalid username or password")
+        return false
+    }
+    else{
+        alert("Hi  " +user+" !! Welcome to Shaa'z")
+    }
+}
+ </script>
+<style> 
+body{
+background-image:url(clothes.webp);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+}
+h1{
+position:relative;
+top:40px;
+text-align:center;
+color:pink;
+}
+.container{
+height:400px;
+width:350px;
+background-color:black;
+opacity:0.7;
+position:relative;
+top:150px;
+left:540px;
+border:solid 2px transparent;
+border-radius:50%;
+color: white;
+}
+.p{
+position:absolute;
+top:130px;
+left:90px;
+}
+#pw{
+background-color:#B4ED4F;
+color:black;
+font-size:15px;
+height:50px;
+width:100px;
+border-radius:80%;
+position:relative;
+}
+#pw:hover{
+background-color:cyan;
+}
+#z{
+    position: absolute;
+    top:-50px;
+    left:38%;
+    border-radius: 50%;
+}
+a:link{
+text-decoration:underline;
+font-size: 25px;
+}
+a:visited{
+    color: pink;
+}
+</style>
+</head>
+<body align="center">
+<div class="container">
+    <img id="z" src="man2.webp" height="90px" width="90px">
+<h1 class="a"> Login </h1>
+<div class="p">
+<form action="2.html" target="_blank" onsubmit="return valid()">
+Username:<br>
+<input type="text" id="user"required>
+<hr size="1px" width="100%"><br>
+
+Password:<br>
+<input type="password"  id="pwd" required><br>
+<hr size="1px" width="100%"><br>
+<input  type= "submit" id="pw">
+</form>
+<!--Password:<br>
+<input type="password" required>
+<hr size="1px" width="100%"><br>
+<a href="2.html" target="_blank"><button class="c">Submit</button></a>>
+-->
+<a href="Signup.html" target="_blank">
+<p style="color: red">New user? Signup</p></a>
+
+</p></div>
+</div>
+
+
+</body>

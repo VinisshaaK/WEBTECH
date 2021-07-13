@@ -1,0 +1,133 @@
+<!doctype html>
+<head>
+<title>Payment</title>
+<link href="colorlogo.jpg" rel="icon">
+<script>
+    function valid(){
+    var pass=document.getElementById("pwd").value
+    if(pass==0){
+        alert("invalid details")
+        return false
+    }
+    else{
+        alert("Payment successful!")
+        return true
+    }
+}
+ </script>
+<style> 
+input{
+    width:80%;
+    padding:3px;
+    border: none;
+}
+.container{
+height:370px;
+width:650px;
+position:relative;
+top:5px;
+left:40px;
+border-radius:20px;
+}
+.position{
+background-color:transparent;
+position: relative;
+top:90px;
+left:0px;
+}
+section {
+width:100%;
+display:flex;
+justify-content:center;
+}
+section div{
+padding:20px;
+border:1px solid black;
+width:50%;
+}
+.flexone{
+position: absolute;
+left:500px;
+top:165px;
+width: 200px;
+height:280px;
+}
+.flextwo{
+   position: relative;
+   top:-170px;
+   left:300px;
+   width:300px;
+   height:280px;
+}
+#d{
+position: relative;
+top:0px;
+width:auto;
+border:none;
+}
+#k{
+background-color:orange;
+color:black;
+height:40px;
+width:150px;
+position: relative;
+left: 900px;
+top:-190px;
+font-family: Cursive;
+border:2px solid black;
+}
+#k:hover{
+background-color:orangered;
+color:black;
+}
+#i{
+    border:white;
+    position: relative;
+    top:-40px;
+    line-height: 30px;
+}
+.adrs{
+width:300px;
+height:200px;
+position: relative;
+top:30px;
+left: 80px;
+}
+#p{
+    text-align: center;
+}
+</style>
+</head>
+<body><h1 align="center">Payment</h1>
+    <p id="p">Cash on Delivery is not available</p>
+    <div >
+     <fieldset class="adrs">
+         <legend align="center"><h2>Address:</h2></legend>
+         <input id="j"type="text" width="" height="700px"  required>
+        </fieldset>  
+    </div>
+<section>
+ <div class="flexone">
+     <div id="i">
+ <img src="gpay1.jpg" height="100px" width="150px">
+ <img src="pay.jpg" height="90px" width="150px">
+ <img  src="mastercard.jpg" height="90px" width="150px">
+    </div></div>
+    <div class="flextwo">
+<div id="d">
+<input type="number" placeholder="Account number " required>
+<hr size="1px" width="100%"> <br>
+<input type="number" placeholder="Card number" required >
+<hr size="1px" width="100%"><br>
+<input type="date" placeholder="Expiry" required>
+<hr size="1px" width="100%"><br>
+<input type="password" placeholder="CVV" id="pwd" required>
+<hr size="1px" width="100%"><br>
+</div></div></section>
+<form action="exit.html" target="_blank" onsubmit="return valid()">
+<input type="submit" id="k"></form>
+<!--
+<a href="exit.html" target="_blank"> </a>-->
+</body>
+
+

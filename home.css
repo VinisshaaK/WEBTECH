@@ -1,0 +1,130 @@
+*{
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+nav{
+	position:relative;
+	left:-10px;
+	width:100%;
+	height:80px;
+	background-color:black;
+	line-height:70px;
+}
+nav ul li{
+	display:inline-block;
+	position: relative;
+	left: 25px;
+	padding:0px;
+	font-size: 25px;
+	margin-left: 100px;
+	}
+nav ul li a{
+	font-style: italic;
+	color:pink;
+	text-decoration:none;
+	position: relative;
+
+}
+nav ul li a:hover{
+font-size: 30px;
+color:rgb(241, 50, 50);;
+}
+  .slide {
+	float: left;
+	position: relative;
+	display: flex;
+	top:10px;
+	left:30px;
+	padding:0px;
+	margin:30px;
+  }
+  .dsg{
+	  position: relative;
+	  top:20px;
+	  height: 160px;
+	  text-align: center;
+  }
+  #h{
+	  position: relative;
+		top:-25px;
+		left:30px;
+		font-style: normal;
+	}
+  #q{
+	position: relative;
+	top:10px;
+	font-size: 30px;
+	font-style:italic;
+  }
+section {
+position:relative;
+left:200px;
+width:60%;
+background:transparent;
+display:flex;
+justify-content:center;
+}
+#fb{
+	color: orange;
+	position: relative;
+	top:-550px;
+	left: 30px;
+	font-size: 60px;
+	text-align: center;
+	font-family: chiller;
+}
+#c{
+	position: relative;
+	top:-60px;
+	text-align: center;
+
+}
+#button{
+    animation: blink 1s infinite;
+    text-align: center;
+    font-size: 35px;
+	position:relative;
+	top:-400px;
+	left:100px;
+	background-color:orangered;
+	text-decoration:none;
+	border-radius: 0px;
+}
+@keyframes blink{
+	from{color: orange;}
+	to{color:black;}
+}
+#button:hover{
+	background-color:gold;
+	color: black;
+}
+#container{
+height:270px;
+width:350px;
+background-color:red;
+opacity:0.6;
+color:white;
+position:relative;
+}
+#z{
+font-size:70px;
+font-family:Chiller;
+position:absolute;
+top:45px;
+left:50px;
+}
+#b{
+color:pink;
+position:relative;
+top:25px;
+font-family:Chiller;
+text-align:center;
+}
+#e{
+color: orange;
+position: relative;
+left:10px;
+font-style:italic;
+font-family:Berlin Sans FB;
+}
